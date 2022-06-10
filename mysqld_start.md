@@ -1,0 +1,110 @@
+
+substitute_progpath
+calculate_mysql_home_from_my_progname
+pre_initialize_performance_schema
+my_init
+    my_thread_global_init
+    my_thread_init
+load_defaults
+    my_load_defaults
+        init_default_directories
+        my_search_option_files
+        set_args_separator
+sys_var_init
+persisted_variables_cache.init
+init_variable_default_paths
+init_pfs_instrument_array
+handle_early_options
+    handle_options
+init_sql_statement_names
+init_error_log
+adjust_related_options
+initialize_performance_schema
+LO_init
+psi_xxxx_hook
+init_server_psi_keys
+my_thread_global_reinit
+init_ssl
+component_infrastructure_init
+    initialize_minimal_chassis
+initialize_manifest_file_components
+set_srv_keyring_implementation_as_default
+PSI_THREAD_CALL
+mysql_audit_initialize
+    init_audit_psi_keys
+Srv_session::module_init()
+query_logger.init()
+init_common_variables
+    my_decimal_set_zero
+    init_thread_environment
+    mysql_init_variables
+    mysql_bin_log.set_psi_keys
+    mysql_bin_log.init_pthread_objects
+    update_parser_max_mem_size
+    set_server_version
+    init_errmessage
+    init_client_errs
+    my_locale_by_name
+    initialize_create_data_directory
+    rpl_global_filter.build_do_table_hash
+    rpl_channel_filters.build_do_and_ignore_table_hashes
+keyring_lockable_init
+my_init_signals
+setup_service_status_cmd_processed_handle
+set_ports
+init_server_components
+    mdl_init();
+    partitioning_init();
+    randominit
+    setup_fpu
+    setup_error_log
+    transaction_cache_init
+    MDL_context_backup_manager::init
+    delegates_init
+    mysql_bin_log.xxx
+    process_key_caches
+    ha_init_errors
+    gtid_server_init
+    udf_init_globals
+    init_server_auto_options
+    plugin_register_early_plugins
+    plugin_register_builtin_and_init_core_se
+    init_sql_command_flags
+    dd::init
+    ha_init
+    initialize_storage_engine
+    Recovered_xa_transactions::init
+    ha_recover
+    ha_post_recover
+    rpl_encryption.initialize
+    udf_load_service.init
+    init_optimizer_cost_module
+    ft_init_stopwords
+    init_max_user_conn
+init_ssl_communication
+network_init
+create_pid_file
+reload_optimizer_cost_constants
+mysql_component_infrastructure_init
+handle_options
+acl_init
+init_acl_memory
+dynamic_privilege_init
+servers_init
+init_status_vars
+binlog_unsafe_map_init
+init_replica
+initialize_performance_schema_acl
+initialize_information_schema_acl
+Events::init
+setup_error_log_components
+process_bootstrap
+mysql_audit_notify
+create_shutdown_and_restart_thread
+start_handle_manager
+create_compress_gtid_table_thread
+server_components_initialized
+set_super_read_only_post_init
+mysqld_socket_acceptor->check_and_spawn_admin_connection_handler_thread()
+mysqld_socket_acceptor->connection_event_loop()
+
