@@ -71,6 +71,22 @@ init_server_components
     plugin_register_builtin_and_init_core_se
     init_sql_command_flags
     dd::init
+
+    dd::init(dd::enum_dd_init_type::DD_INITIALIZE)
+        Dictionary_impl::init
+            ::bootstrap::run_bootstrap_thread(nullptr, nullptr, &bootstrap::initialize, SYSTEM_THREAD_DD_INITIALIZE)
+            bootstrap::initialize
+            DDSE_dict_init
+            ddse->ddse_dict_init
+            innobase_ddse_dict_init
+            innobase_init_files
+                srv_start
+                dd_open_hardcoded
+                srv_mon_default_on
+
+    dd::init(dd::enum_dd_init_type::DD_RESTART_OR_UPGRADE)
+        
+
     ha_init
     initialize_storage_engine
     Recovered_xa_transactions::init
