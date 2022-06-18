@@ -10,6 +10,15 @@ undo表空间（Undo Tablespace）
 
 
 相关源码文件
+
+fsp0types.h
+fsp0file.h
+fsp0fsp.h
+fsp0fsp.ic
+fsp0space.h
+fsp0sysspace.h
+
+
 fsp0file.cc
 fsp0fsp.cc
 fsp0space.cc
